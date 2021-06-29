@@ -8,8 +8,9 @@ Algoritmo de planificación FCFS (First Come First Server) Continiacion
 3. A las teclas que ya estaban se agregan nuevas a utilizar, las cuales son:
 <img src="https://cdn.discordapp.com/attachments/762088441314934794/859559833291456512/unknown.png" width="706" height="616">
 4. Los datos a mostrar en la tabla de procesos (cuando se presiona la tecla B) son:
-    a. Identificador del proceso.
-    b. Estado del proceso. En este punto debe considerar lo siguiente: si el proceso es
+   
+   a. Identificador del proceso.
+   b. Estado del proceso. En este punto debe considerar lo siguiente: si el proceso es
        nuevo, los campos siguientes serán nulos, si el proceso es terminado debe señalar si
        fue terminado por error o normalmente, si el proceso es bloqueado hay que mostrar
        el tiempo restante en dicho estado.
@@ -39,7 +40,7 @@ Algoritmo de planificación FCFS (First Come First Server) Continiacion
     e. Procesos Terminados
         i. Identificador de Proceso.
         ii. Operación.
-        iii. Resultado de la operación o bien ERROR cuando el proceso haya sido
+        iii. Resultado de la operación o bien ERROR cuando el proceso haya sido 
         terminado con la tecla “E”.
     f. Reloj, es decir, el contador del tiempo total transcurrido desde el inicio de la
        simulación hasta su término.
