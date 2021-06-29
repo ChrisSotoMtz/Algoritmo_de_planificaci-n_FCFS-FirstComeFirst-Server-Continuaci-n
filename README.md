@@ -2,29 +2,48 @@
 Algoritmo de planificación FCFS (First Come First Server) Continiacion
 
 # Especificaciones
-1. En esta práctica se contempla el diagrama de Cinco Estados:
-    a. Nuevo: Procesos que se acaban de crear pero aún no han sido admitidos por el sistema
-       operativo en el grupo de procesos ejecutables.
-    b. Listos: Procesos que están preparados para ejecutarse, en cuanto sea su turno.
-    c. Ejecución: Proceso que está actualmente en ejecución.
-    d. Bloqueado: Proceso que no puede ejecutar hasta que se produzca cierto suceso, como
-       la terminación de una operación de E/S.
-    e. Terminado: Un proceso que ha sido excluido por el sistema operativo del grupo de
-       procesos activos, bien porque se detuvo o porque fue abandonado por alguna razón.
-2. El algoritmo por implementar para la cola de listos es el FCFS es decir los procesos se
-   ordenarán conforme van llegando.
-3. Se preguntará el Número de Procesos inicial pudiendo ser N procesos.
-4. El máximo de procesos en memoria será de 5 (Recuerde que los estados a considerar en este
-   caso son: Ejecución, Bloqueado y Listo).
-5. Los procesos que no tengan cupo en la cola de listos deberán quedarse en la cola de Nuevos,
-   esperando a que algún proceso termine y así ingresar al sistema.
-6. A cada uno de los procesos que se generan (punto 3) se le asignará internamente:
-    a. Identificador de proceso único. (Puede ser secuencial)
-    b. Tiempo máximo estimado (aleatorio, validar que sea mayor a 0 y en un rango entre
-       6 y 15).
-    c. Datos para la operación a realizar (aleatorio, validar error aritmético). (Ver punto 2
-       de la actividad 4 (programa 2))
-7. Las teclas a utilizar son: 
+1. Continuamos con la práctica anterior, donde el algoritmo a utilizar en la cola de listos es
+   FCFS.
+2. Se cumplirá con todos los requisitos de la actividad 6 (programa 3)
+3. A las teclas que ya estaban se agregan nuevas a utilizar, las cuales son:
 <img src="https://cdn.discordapp.com/attachments/762088441314934794/859559833291456512/unknown.png" width="706" height="616">
+4. Los datos a mostrar en la tabla de procesos (cuando se presiona la tecla B) son:
+    a. Identificador del proceso.
+    b. Estado del proceso. En este punto debe considerar lo siguiente: si el proceso es
+       nuevo, los campos siguientes serán nulos, si el proceso es terminado debe señalar si
+       fue terminado por error o normalmente, si el proceso es bloqueado hay que mostrar
+       el tiempo restante en dicho estado.
+    c. Operación y datos, si el proceso es terminado también mostrar resultado.
+    d. Tiempo de Llegada.
+    e. Tiempo de Finalización. (Si aplica)
+    f. Tiempo de Retorno. (Si aplica) 
+    g. Tiempo de Espera. (Al momento)
+    h. Tiempo de Servicio. (Al momento)
+    i. Tiempo Restante en CPU. (Si aún no termina)
+    j. Tiempo de Respuesta. (Si aplica)
+5. Deberá mostrarse en pantalla:
+    a. Listar número de procesos en estado Nuevo, actualizar ya sea porque pasan a Listos
+       o bien por que ingresan nuevos (tecla “N”).
+    b. Cola de listos:
+        i. Identificador de Proceso.
+        ii. Tiempo Máximo Estimado.
+        iii. Tiempo Restante.
+    c. Proceso en Ejecución:
+        i. Se mostraran todos los datos correspondientes al proceso.
+        ii. Tiempo transcurrido en ejecución.
+        iii. Tiempo restante por ejecutar.
+    d. Cola de Bloqueados
+        i. Identificador de Proceso.
+        ii. Tiempo transcurrido en bloqueado.
+    e. Procesos Terminados
+        i. Identificador de Proceso.
+        ii. Operación.
+        iii. Resultado de la operación o bien ERROR cuando el proceso haya sido
+        terminado con la tecla “E”.
+    f. Reloj, es decir, el contador del tiempo total transcurrido desde el inicio de la
+       simulación hasta su término.
+6. El programa terminará cuando todos los procesos se hayan ejecutado (pausar la pantalla al
+   terminar para observar).
+7. Mostrar al finalizar todos los datos de cada proceso, es decir, la tabla de procesos. 
 # Contacto
 christian.soto4752@alumnos.udg.mx  
