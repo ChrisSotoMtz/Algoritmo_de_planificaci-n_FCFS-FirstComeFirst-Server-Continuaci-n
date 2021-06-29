@@ -21,6 +21,7 @@ Algoritmo de planificación FCFS (First Come First Server) Continiacion
     h. Tiempo de Servicio. (Al momento)
     i. Tiempo Restante en CPU. (Si aún no termina)
     j. Tiempo de Respuesta. (Si aplica)
+    
 5. Deberá mostrarse en pantalla:
     a. Listar número de procesos en estado Nuevo, actualizar ya sea porque pasan a Listos
        o bien por que ingresan nuevos (tecla “N”).
@@ -42,8 +43,10 @@ Algoritmo de planificación FCFS (First Come First Server) Continiacion
         terminado con la tecla “E”.
     f. Reloj, es decir, el contador del tiempo total transcurrido desde el inicio de la
        simulación hasta su término.
+       
 6. El programa terminará cuando todos los procesos se hayan ejecutado (pausar la pantalla al
    terminar para observar).
+   
 7. Mostrar al finalizar todos los datos de cada proceso, es decir, la tabla de procesos. 
 # Contacto
 christian.soto4752@alumnos.udg.mx  
